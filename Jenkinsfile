@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Cloner le dépôt') {
             steps {
-                git 'https://github.com/ramirachdi/tp-kubernetes-helm-jenkins.git'
+                git branch: 'main', url: 'https://github.com/ramirachdi/tp-kubernetes-helm-jenkins.git'
             }
         }
 
